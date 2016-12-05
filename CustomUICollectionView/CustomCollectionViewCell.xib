@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CustomCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上课时间：周一至周五白天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyQ-CI-m1W">
+                        <rect key="frame" x="5" y="8" width="135" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原价：80元/课时 3200元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVf-FX-mRv">
+                        <rect key="frame" x="9" y="26.5" width="127.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="团购价仅需2999元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTE-EU-Ii3">
+                        <rect key="frame" x="17" y="45" width="112" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ime-1H-KtX">
+                        <rect key="frame" x="51" y="66" width="43" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="去抢购">
+                            <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WTE-EU-Ii3" firstAttribute="top" secondItem="jVf-FX-mRv" secondAttribute="bottom" constant="5" id="3So-bN-gBg"/>
+                <constraint firstItem="ime-1H-KtX" firstAttribute="top" secondItem="WTE-EU-Ii3" secondAttribute="bottom" constant="5" id="BwB-MX-nXk"/>
+                <constraint firstItem="jVf-FX-mRv" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="HBt-Lv-20g"/>
+                <constraint firstItem="jVf-FX-mRv" firstAttribute="top" secondItem="PyQ-CI-m1W" secondAttribute="bottom" constant="5" id="Ht8-ru-uNW"/>
+                <constraint firstItem="PyQ-CI-m1W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Jqv-G9-454"/>
+                <constraint firstItem="ime-1H-KtX" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="UKP-2I-FKt"/>
+                <constraint firstItem="WTE-EU-Ii3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Vqc-M1-qDa"/>
+                <constraint firstItem="PyQ-CI-m1W" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="he0-38-Umz"/>
+            </constraints>
+            <connections>
+                <outlet property="classTime" destination="PyQ-CI-m1W" id="HJA-6k-gq0"/>
+                <outlet property="goBtn" destination="ime-1H-KtX" id="7Mf-Zw-vFM"/>
+                <outlet property="groupLab" destination="WTE-EU-Ii3" id="Ecc-MI-MZc"/>
+                <outlet property="priceLab" destination="jVf-FX-mRv" id="q5z-fH-iRQ"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </collectionViewCell>
+    </objects>
+</document>

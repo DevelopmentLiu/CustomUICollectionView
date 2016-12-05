@@ -15,6 +15,8 @@
 		634A37551DF5044B00A5877B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634A37531DF5044B00A5877B /* LaunchScreen.storyboard */; };
 		634A37601DF5044D00A5877B /* CustomUICollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A375F1DF5044D00A5877B /* CustomUICollectionViewTests.m */; };
 		634A376B1DF5044D00A5877B /* CustomUICollectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A376A1DF5044D00A5877B /* CustomUICollectionViewUITests.m */; };
+		634A37801DF519D200A5877B /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A377E1DF519D200A5877B /* CustomCollectionViewCell.m */; };
+		634A37811DF519D200A5877B /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634A377F1DF519D200A5877B /* CustomCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		634A37661DF5044D00A5877B /* CustomUICollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomUICollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		634A376A1DF5044D00A5877B /* CustomUICollectionViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomUICollectionViewUITests.m; sourceTree = "<group>"; };
 		634A376C1DF5044E00A5877B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634A377D1DF519D200A5877B /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		634A377E1DF519D200A5877B /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		634A377F1DF519D200A5877B /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,9 @@
 				634A37531DF5044B00A5877B /* LaunchScreen.storyboard */,
 				634A37561DF5044B00A5877B /* Info.plist */,
 				634A37451DF5044A00A5877B /* Supporting Files */,
+				634A377D1DF519D200A5877B /* CustomCollectionViewCell.h */,
+				634A377E1DF519D200A5877B /* CustomCollectionViewCell.m */,
+				634A377F1DF519D200A5877B /* CustomCollectionViewCell.xib */,
 			);
 			path = CustomUICollectionView;
 			sourceTree = "<group>";
@@ -252,6 +260,7 @@
 				634A37551DF5044B00A5877B /* LaunchScreen.storyboard in Resources */,
 				634A37521DF5044B00A5877B /* Assets.xcassets in Resources */,
 				634A37501DF5044B00A5877B /* Main.storyboard in Resources */,
+				634A37811DF519D200A5877B /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +288,7 @@
 				634A374D1DF5044B00A5877B /* ViewController.m in Sources */,
 				634A374A1DF5044A00A5877B /* AppDelegate.m in Sources */,
 				634A37471DF5044A00A5877B /* main.m in Sources */,
+				634A37801DF519D200A5877B /* CustomCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
